@@ -1,0 +1,17 @@
+<nav class="site-nav">
+  <a href="/" class="site-name">{{ .Site.Params.name | default .Site.Title }}</a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name | lower }}</a></li>
+      {{ end }}
+    </ul>
+    <div class="theme-toggle" onclick="toggleTheme()" role="button" tabindex="0" aria-label="Toggle theme">
+      <span class="toggle-label toggle-label-left">editorial</span>
+      <div class="toggle-track">
+        <div class="toggle-thumb"></div>
+      </div>
+      <span class="toggle-label toggle-label-right">terminal</span>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,58 @@
+{{ define "main" }}
+<section class="list-page">
+  <header class="page-header">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ with .Description }}
+    <p class="page-description">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  {{ if eq .Section "posts" }}
+  <div class="section writing-section">
+    {{ range .Pages }}
+    <a href="{{ .Permalink }}" class="post-item">
+      <span class="post-title">{{ .Title }}</span>
+      <span class="post-date">{{ .Date.Format "Jan 2006" }}</span>
+    </a>
+    {{ end }}
+  </div>
+
+  {{ else if eq .Section "projects" }}
+  <div class="section projects-section">
+    {{ range .Pages.ByDate.Reverse }}
+    <a href="{{ .Permalink }}" class="project-card">
+      <div class="card-top">
+        <h3>{{ .Title }}</h3>
+        {{ with .Params.tag }}
+        <span class="card-tag">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ with .Params.philosophy }}
+      <p class="card-philosophy">"{{ . }}"</p>
+      {{ end }}
+      {{ with .Description }}
+      <p class="card-description">{{ . }}</p>
+      {{ end }}
+      {{ with .Params.meta }}
+      <div class="card-bottom">
+        {{ range . }}
+        <span>{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+    </a>
+    {{ end }}
+  </div>
+
+  {{ else }}
+  <div class="section">
+    {{ range .Pages }}
+    <a href="{{ .Permalink }}" class="post-item">
+      <span class="post-title">{{ .Title }}</span>
+      <span class="post-date">{{ .Date.Format "Jan 2006" }}</span>
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+</section>
+{{ end }}

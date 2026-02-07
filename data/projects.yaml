@@ -1,0 +1,30 @@
+- title: "Enterprise GenAI Knowledge Platform"
+  slug: "genai-platform"
+  tag: "McKinsey · 2025"
+  philosophy: "Strategic outputs shouldn't die the moment the engagement ends."
+  description: "Built and deployed a GenAI-powered knowledge system across 3 client sites, turning static consulting deliverables into living, queryable intelligence. Sole business lead; scaled to 40–50 person cross-region team."
+  meta:
+    - "Founding EM"
+    - "3 deployments"
+    - "→ Dedicated team of 5+ PMs"
+
+- title: "Project Ontos"
+  slug: "ontos"
+  tag: "Open Source"
+  philosophy: "AI context should be readable, not retrievable. Glass box, not black box."
+  description: "A local-first AI context management system: a repo-native knowledge graph in markdown + YAML, designed for inspectable, repeatable workflows across AI tools. Solo-built and published on PyPI."
+  meta:
+    - "Python CLI"
+    - "PyPI: ontos"
+    - "500+ commits"
+    - "Apache 2.0"
+
+- title: "Folio"
+  slug: "folio"
+  tag: "Personal"
+  philosophy: "Billions of dollars of consulting output dies the moment the engagement ends."
+  description: "CLI tool that transforms PowerPoint and PDF deliverables into a searchable, AI-native knowledge library. Converts decks into markdown with LLM analysis and version tracking."
+  meta:
+    - "Python · Click CLI"
+    - "Claude API"
+    - "Obsidian-compatible"

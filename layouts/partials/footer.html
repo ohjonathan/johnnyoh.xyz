@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <span class="footer-left">
+    Jonathan Oh · San Francisco
+    <span class="footer-build"> · build: a1b2c3d · main</span>
+    <span class="footer-status"> Online</span>
+  </span>
+  <div class="footer-links">
+    <a href="https://github.com/{{ .Site.Params.github }}">{{ partial "icons/github.html" . }}GitHub</a>
+    <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}">{{ partial "icons/linkedin.html" . }}LinkedIn</a>
+    <a href="{{ "about/" | relURL }}">About</a>
+  </div>
+</footer>
