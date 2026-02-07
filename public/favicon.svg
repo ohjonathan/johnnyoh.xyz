@@ -5,5 +5,5 @@
     .oh { font-family: 'JetBrains Mono', monospace; font-weight: 800; font-size: 260px; fill: #ffffff; }
   </style>
   <text class="oh" x="64" y="370">Oh</text>
-  <rect x="370" y="318" width="52" height="52" rx="10" fill="#2563eb"/>
+  <rect x="370" y="344" width="52" height="52" rx="10" fill="#2563eb"/>
 </svg>
