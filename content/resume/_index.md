@@ -4,6 +4,22 @@ description: "Builder by default. Consultant by training. I find what systems ob
 layout: "resume"
 ---
 
+## Experience
+
+### McKinsey & Company — Engagement Manager
+**McKinsey Technology · December 2021 – Present**
+
+- Led production optimization engagement with GenAI implementation at a US steel manufacturer with multiple mills, building on enterprise GenAI deployment experience to optimize production scheduling, order batching, and facility utilization; sized a ~$200M annual profit improvement opportunity
+- Re-evaluated a ~$35M/year ERP contract and developed a GenAI and data strategy for a Canadian oil & gas company, unlocking siloed data capabilities and building an enterprise AI roadmap; CIO presented findings to the board, expanding into follow-on work
+- Redesigned the technology operating model for a federal financial agency, consolidating 10+ business units and 150+ senior engineering leaders under a new horizontal governance structure across previously siloed branches
+- Drove ~$30M in incremental annual savings across a ~$2B infrastructure budget through compute scheduling optimization, consumption-based contract renegotiation, hardware resale, and contractor consolidation
+- Optimized cost-of-goods-sold for a global sports retail brand, conducting component-level pricing analysis across Asian manufacturing suppliers to identify renegotiation levers and margin improvement opportunities
+
+### Massachusetts Department of Revenue, Commissioner's Office — Management Analyst
+**July 2017 – November 2021**
+
+Led data infrastructure and executive analytics for $30B tax revenue operations; reduced reporting processing time by 90%.
+
 ## Projects
 
 ### Enterprise GenAI Knowledge Platform
@@ -21,22 +37,6 @@ layout: "resume"
 - Solved the context portability problem across AI tools — built a repo-native knowledge graph in markdown + YAML that makes decisions inspectable, repeatable, and durable across sessions and rewrites
 - Designed a structural graph traversal system with layered context (kernel → strategy → product → atom), ensuring strategic rationale survives when implementation is rewritten
 - Published on PyPI as a Python CLI; used in daily production workflows; 500+ commits; roadmap to MCP integration
-
-## Experience
-
-### McKinsey & Company — Engagement Manager
-**McKinsey Technology · December 2021 – Present**
-
-- Led production optimization engagement with GenAI implementation at a US steel manufacturer with multiple mills, building on enterprise GenAI deployment experience to optimize production scheduling, order batching, and facility utilization; sized a ~$200M annual profit improvement opportunity
-- Re-evaluated a ~$35M/year ERP contract and developed a GenAI and data strategy for a Canadian oil & gas company, unlocking siloed data capabilities and building an enterprise AI roadmap; CIO presented findings to the board, expanding into follow-on work
-- Redesigned the technology operating model for a federal financial agency, consolidating 10+ business units and 150+ senior engineering leaders under a new horizontal governance structure across previously siloed branches
-- Drove ~$30M in incremental annual savings across a ~$2B infrastructure budget through compute scheduling optimization, consumption-based contract renegotiation, hardware resale, and contractor consolidation
-- Optimized cost-of-goods-sold for a global sports retail brand, conducting component-level pricing analysis across Asian manufacturing suppliers to identify renegotiation levers and margin improvement opportunities
-
-### Massachusetts Department of Revenue, Commissioner's Office — Management Analyst
-**July 2017 – November 2021**
-
-Led data infrastructure and executive analytics for $30B tax revenue operations; reduced reporting processing time by 90%.
 
 ## Education
 
