@@ -1,91 +1,250 @@
 {{ define "main" }}
-<article class="single-page about-page">
-
-  <!-- Zone 1: Hero intro — terminal badge + photo/text grid -->
-  <div class="terminal-badge about-badge">
-    <span class="terminal-prompt">$</span>
-    <span class="typing-text about-typing">whoami</span>
-  </div>
-
-  <div class="about-hero">
-    <div class="about-photo-wrapper">
-      <img src="/images/about-photo.png" alt="Johnny at a steel mill" class="about-photo" />
+<article class="single-page about-page-v2">
+  <div class="about-v2-hero">
+    <div class="hero-image-wrap">
+      <img src="{{ "images/about-photo.png" | relURL }}" alt="Johnny at a steel mill" class="hero-image">
     </div>
-    <div class="about-intro">
-      <h1 class="about-tagline">I'm Johnny. I build things that <span class="tagline-accent">make systems honest.</span></h1>
-      <p class="about-intro-text">Right now I'm an Engagement Manager at McKinsey, where I lead teams across GenAI implementation, production optimization, and operating model redesign. Before that, I spent four years inside Massachusetts state government building data infrastructure for $30B in tax revenue operations. I've earned two degrees while working full-time, shipped open-source tools, and deployed enterprise AI platforms across three continents.</p>
-      <p class="about-intro-text">But the resume version of me isn't the interesting part.</p>
+    <div class="hero-gradient"></div>
+    <div class="hero-melt-top"></div>
+    <div class="hero-melt-left"></div>
+    <div class="hero-melt-right"></div>
+    <div class="hero-content">
+      <div class="hero-prompt"></div>
+      <h1 class="hero-title">I'm Johnny. I build things that <span class="accent">make systems honest.</span></h1>
+      <p class="hero-subtitle">Right now I'm an Engagement Manager at McKinsey, where I lead teams across GenAI implementation, production optimization, and operating model redesign. Before that, four years inside Massachusetts state government. Two degrees earned while working full-time.<br><br><em>But the resume version of me isn't the interesting part.</em></p>
     </div>
   </div>
 
-  <div class="page-content">
-
-    <!-- Zone 2: What drives me — pull quote + prose -->
-    <div class="about-section">
-      <div class="section-header">
-        <h2>What Actually Drives Me</h2>
-      </div>
-      <div class="about-callout">Glass box, not black box.</div>
+  <div class="content">
+    <section>
+      <div class="section-label">what_drives_me</div>
+      <div class="callout">Glass box, not black box.</div>
       <p>I'm obsessed with systems that pretend to be something they're not. Institutions that obscure how they actually work. Software that hides its own logic. Organizations that bury decisions behind layers of process until no one can trace who decided what, or why.</p>
       <p>I kept finding this pattern everywhere — in government, in consulting, in the AI tools I use every day. The response is always the same: make it legible. Build the thing that forces transparency.</p>
       <p>That instinct is the throughline across everything I've done. At the Department of Revenue, I built dashboards that made $30B in tax operations visible to the people running them. At McKinsey, I built a GenAI platform that turned billions of dollars of dead consulting deliverables into a living, queryable knowledge system. On my own time, I built Project Ontos because AI tools don't share context — every session starts from zero, and no one can see why the system made the choices it did.</p>
-      <p>Same instinct. Increasing scale.</p>
-    </div>
-
-    <!-- Zone 3: How I work — tag badges + prose -->
-    <div class="about-section">
-      <div class="section-header">
-        <h2>How I Work</h2>
+      <div class="punchline">same instinct. increasing scale.</div>
+      <div class="stats-grid">
+        <div class="stat-cell"><div class="stat-number">$30B</div><div class="stat-label">Tax Revenue Ops</div></div>
+        <div class="stat-cell"><div class="stat-number">8</div><div class="stat-label">Engagements</div></div>
+        <div class="stat-cell"><div class="stat-number">6</div><div class="stat-label">Industries</div></div>
+        <div class="stat-cell"><div class="stat-number">40–50</div><div class="stat-label">Person Team</div></div>
+        <div class="stat-cell"><div class="stat-number">500+</div><div class="stat-label">Commits</div></div>
+        <div class="stat-cell"><div class="stat-number">3</div><div class="stat-label">Continents</div></div>
       </div>
-      <div class="about-tags">
-        <span class="card-tag">YAGNI</span>
-        <span class="card-tag">5–7 AI terminals</span>
-        <span class="card-tag">Ship > Recommend</span>
+    </section>
+
+    <section>
+      <div class="section-label">how_i_work</div>
+      <div class="work-tags">
+        <span class="tag">YAGNI</span>
+        <span class="tag">KISS</span>
+        <span class="tag">5–7 AI terminals</span>
+        <span class="tag">ship > recommend</span>
+        <span class="tag">single-feature tools</span>
       </div>
       <p>I run five to seven AI terminals simultaneously. I ship fast, break things intentionally, and believe the best way to test an idea is to build it. My development philosophy is simple: YAGNI, KISS, single-feature tools that solve one problem well.</p>
       <p>I'm a consultant by training, which means I can walk into any industry — steel manufacturing, oil and gas, federal government, medtech, retail — and get to the core of the problem quickly. But I'm a builder by default, which means I'd rather ship a working solution than present a recommendation.</p>
       <p>I'm most energized when I'm marrying theory with real-world data to create something that works. Pressure-testing ideas with smart people. Converting research into products, not slide decks.</p>
-      <p>I'm least energized by consensus-building among people who aren't contributing and political alignment work where the goal is agreement, not truth.</p>
-    </div>
+      <div class="punchline">least energized by consensus-building among non-contributors. the goal is truth, not agreement.</div>
+    </section>
+  </div>
 
-    <!-- Zone 4: The path here — accent-highlighted milestones -->
-    <div class="about-section">
-      <div class="section-header">
-        <h2>The Path Here</h2>
-      </div>
-      <p>I started as an aide in the <strong>Governor's office</strong> in Massachusetts. Moved into state government data work, where I was hired full-time during a statewide hiring freeze — had to go through state congress for my position approval. Earned a BBA and then an MS in Business Analytics from <strong>Bentley</strong>, both while working full-time.</p>
-      <p>Joined <strong>McKinsey</strong> as a Business Analyst, got promoted to Engagement Manager in four years. Led eight engagements across six industries. Founded and scaled an internal GenAI platform from a small team to a 40–50 person cross-region operation.</p>
-      <p>Along the way, I started building. Open-source tools, personal finance engines, multi-agent systems, context management infrastructure. Not because anyone asked me to. Because the tools I needed didn't exist.</p>
-    </div>
+  <div class="photo-break">
+    <img src="{{ "images/about-mountain.jpg" | relURL }}" alt="Mountain summit" class="photo-break-image">
+    <div class="photo-break-melt-top"></div>
+    <div class="photo-break-melt-bottom"></div>
+    <div class="photo-break-melt-left"></div>
+    <div class="photo-break-melt-right"></div>
+  </div>
 
-    <!-- Zone 5: What's next — prose + CTA -->
-    <div class="about-section">
-      <div class="section-header">
-        <h2>What's Next</h2>
+  <div class="content">
+    <section>
+      <div class="section-label">the_path</div>
+      <div class="timeline">
+        <div class="timeline-entry">
+          <div class="timeline-cmd">$ cd /gov/massachusetts</div>
+          <div class="timeline-year">2016</div>
+          <div class="timeline-text">Started as an aide in the <strong>Governor's office</strong>. Moved into state government data work. Hired full-time during a statewide hiring freeze — had to go through state congress for position approval.</div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-cmd">$ cat degrees.log</div>
+          <div class="timeline-year">2016 – 2021</div>
+          <div class="timeline-text">Earned a <strong>BBA</strong> and then an <strong>MS in Business Analytics</strong> from Bentley. Both while working full-time.</div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-cmd">$ ssh mckinsey@technology</div>
+          <div class="timeline-year">2021</div>
+          <div class="timeline-text">Joined <strong>McKinsey</strong> as a Business Analyst. Promoted to Engagement Manager in four years. Led eight engagements across six industries.</div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-cmd">$ ./build --scale=enterprise</div>
+          <div class="timeline-year">2025</div>
+          <div class="timeline-text">Founded and scaled an internal <strong>GenAI platform</strong> from a small team to a 40–50 person cross-region operation. Deployed across three client sites. Transitioned to a dedicated team of 5+ PMs.</div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-cmd">$ pip install ontos</div>
+          <div class="timeline-year">2024 – present</div>
+          <div class="timeline-text">Started building. Open-source tools, personal finance engines, multi-agent systems, context management infrastructure. Not because anyone asked me to. <strong>Because the tools I needed didn't exist.</strong></div>
+        </div>
       </div>
+    </section>
+  </div>
+
+  <div class="photo-break">
+    <img src="{{ "images/about-hanbok.jpg" | relURL }}" alt="Johnny in hanbok at a Korean palace" class="photo-break-image" style="object-position: center 65%;">
+    <div class="photo-break-melt-top"></div>
+    <div class="photo-break-melt-bottom"></div>
+    <div class="photo-break-melt-left"></div>
+    <div class="photo-break-melt-right"></div>
+  </div>
+
+  <div class="content">
+    <section>
+      <div class="section-label">whats_next</div>
       <p>My wife and I chose San Francisco. We'd both been looking to be in the tech ecosystem — in the room where it happens. My wife, Michelle, is an agent strategist at Sierra AI, while I continue to serve McKinsey &amp; Company and its technology practice. It was a balance of adventure and continuity.</p>
       <p>I'm interested in the intersection of AI and institutional transparency — systems that don't just automate processes, but redesign them to be legible, accountable, and honest. I want to build products at that intersection, ideally at a stage where I can own the whole problem end-to-end.</p>
-      <p class="about-cta">If you're building something in this space, I'd like to hear about it.</p>
+      <div class="cta-block">
+        <div class="cta-text">If you're building something in this space, I'd like to hear about it.<span class="cursor-blink"> █</span></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-label">elsewhere</div>
+      <div class="elsewhere-layout">
+        <div class="elsewhere-text">
+          <p>I'm Korean-American and bilingual. I've spent my whole life at the intersection of different cultures, ideas, and ways of thinking — and I've come to realize that's exactly what excites me. The spaces where things are moving, colliding, and changing are the ones that feel like home.</p>
+          <div class="elsewhere-bits">
+            <span>over-engineers finance spreadsheets</span>
+            <span>best code is the code you delete</span>
+            <span>bilingual: English + Korean</span>
+            <span>San Francisco, CA</span>
+          </div>
+        </div>
+        <div class="inline-photo-wrap">
+          <img src="{{ "images/about-seoul.jpg" | relURL }}" alt="Johnny overlooking Seoul at night" class="inline-photo">
+          <div class="inline-photo-melt"></div>
+          <div class="inline-photo-melt-right"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="terminal-end" id="terminal-end">
+      <span class="prompt">$</span> next <span class="cursor-blink">█</span><div class="contact-label">contact me</div>
     </div>
 
-    <!-- Zone 6: Elsewhere — personal + links -->
-    <div class="about-section">
-      <div class="section-header">
-        <h2>Elsewhere</h2>
-      </div>
-      <p>I'm Korean-American and bilingual. I've spent my whole life at the intersection of different cultures, ideas, and ways of thinking — and I've come to realize that's exactly what excites me. The spaces where things are moving, colliding, and changing are the ones that feel like home.</p>
-      <p>I've been known to over-engineer personal finance spreadsheets. I believe the best code is the code you delete.</p>
-      <div class="about-links">
-        <a href="https://github.com/ohjonathan">GitHub</a>
-        <span class="separator-dot">·</span><span class="separator-pipe">|</span>
-        <a href="https://www.linkedin.com/in/ohjohnny">LinkedIn</a>
-        <span class="separator-dot">·</span><span class="separator-pipe">|</span>
-        <a href="/resume/">Resume</a>
-        <span class="separator-dot">·</span><span class="separator-pipe">|</span>
-        <a href="mailto:jonathanoh1994@gmail.com">Email</a>
-      </div>
+    <div class="about-footer" id="about-footer">
+      <a href="https://github.com/ohjonathan">GitHub</a>
+      <a href="https://www.linkedin.com/in/ohjohnny">LinkedIn</a>
+      <a href="{{ "resume/" | relURL }}">Resume</a>
+      <a href="mailto:jonathanoh1994@gmail.com">Email</a>
     </div>
-
   </div>
 </article>
+
+<script>
+(function () {
+  var root = document.querySelector('.about-page-v2');
+  if (!root) {
+    return;
+  }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  root.querySelectorAll('section').forEach(function (section) {
+    observer.observe(section);
+  });
+
+  var footerObs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  var terminalEnd = root.querySelector('#terminal-end');
+  var aboutFooter = root.querySelector('#about-footer');
+
+  if (terminalEnd) {
+    terminalEnd.style.opacity = '0';
+    terminalEnd.style.transform = 'translateY(20px)';
+    terminalEnd.style.transition = 'opacity 0.8s, transform 0.8s';
+    footerObs.observe(terminalEnd);
+  }
+
+  if (aboutFooter) {
+    aboutFooter.style.opacity = '0';
+    aboutFooter.style.transform = 'translateY(20px)';
+    aboutFooter.style.transition = 'opacity 0.8s 0.2s, transform 0.8s 0.2s';
+    footerObs.observe(aboutFooter);
+  }
+
+  var prompt = root.querySelector('.hero-prompt');
+  var text = '$ whoami';
+  var i = 0;
+  setTimeout(function () {
+    function typeChar() {
+      if (i < text.length) {
+        prompt.textContent = text.substring(0, i + 1);
+        i += 1;
+        setTimeout(typeChar, 80 + Math.random() * 60);
+      } else {
+        var cursor = document.createElement('span');
+        cursor.className = 'cursor-blink';
+        cursor.textContent = ' █';
+        prompt.appendChild(cursor);
+      }
+    }
+    if (prompt) {
+      typeChar();
+    }
+  }, 300);
+
+  var statObs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        var cells = entry.target.querySelectorAll('.stat-cell');
+        cells.forEach(function (cell, idx) {
+          cell.style.opacity = '0';
+          cell.style.transform = 'translateY(15px)';
+          setTimeout(function () {
+            cell.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            cell.style.opacity = '1';
+            cell.style.transform = 'translateY(0)';
+          }, idx * 80);
+        });
+        statObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  root.querySelectorAll('.stats-grid').forEach(function (grid) {
+    statObs.observe(grid);
+  });
+
+  var photoBreakImages = root.querySelectorAll('.photo-break-image');
+  if (photoBreakImages.length > 0) {
+    window.addEventListener('scroll', function () {
+      photoBreakImages.forEach(function (photoBreakImage) {
+        var container = photoBreakImage.parentElement;
+        if (!container) {
+          return;
+        }
+        var rect = container.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          var offset = (rect.top - window.innerHeight / 2) * 0.3;
+          photoBreakImage.style.transform = 'scale(1.08) translateY(' + (offset * 0.1) + 'px)';
+        }
+      });
+    }, { passive: true });
+  }
+})();
+</script>
 {{ end }}
