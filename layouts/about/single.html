@@ -12,6 +12,7 @@
       <div class="hero-prompt"></div>
       <h1 class="hero-title">I'm Johnny. I build things that <span class="accent">make systems honest.</span></h1>
       <p class="hero-subtitle">Right now I'm an Engagement Manager at McKinsey, where I lead teams across GenAI implementation, production optimization, and operating model redesign. Before that, four years inside Massachusetts state government. Two degrees earned while working full-time.<br><br><em>But the resume version of me isn't the interesting part.</em></p>
+      <button type="button" class="hero-terminal-cta" id="hero-terminal-cta">Knock, knock…</button>
     </div>
   </div>
 
@@ -206,6 +207,47 @@
       typeChar();
     }
   }, 300);
+
+  var terminalCta = root.querySelector('#hero-terminal-cta');
+  if (terminalCta) {
+    function syncTerminalCtaState() {
+      var theme = document.documentElement.getAttribute('data-theme');
+      var isTerminal = theme === 'terminal';
+      terminalCta.disabled = isTerminal;
+      terminalCta.textContent = isTerminal ? 'Already unplugged' : 'Knock, knock…';
+      terminalCta.setAttribute('aria-disabled', isTerminal ? 'true' : 'false');
+    }
+
+    terminalCta.addEventListener('click', function () {
+      if (document.documentElement.getAttribute('data-theme') === 'terminal') {
+        syncTerminalCtaState();
+        return;
+      }
+
+      if (typeof window.toggleTheme === 'function') {
+        window.toggleTheme();
+      } else {
+        document.documentElement.setAttribute('data-theme', 'terminal');
+        try {
+          localStorage.setItem('theme', 'terminal');
+        } catch (e) {
+          // no-op if storage is unavailable
+        }
+      }
+
+      syncTerminalCtaState();
+    });
+
+    var htmlObserver = new MutationObserver(function () {
+      syncTerminalCtaState();
+    });
+    htmlObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme']
+    });
+
+    syncTerminalCtaState();
+  }
 
   var statObs = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
