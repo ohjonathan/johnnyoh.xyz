@@ -2025,12 +2025,12 @@ body {
 
 @media (max-width: 768px) {
   .about-page-v2 .about-v2-hero {
-    height: 64vh;
-    min-height: 390px;
+    height: auto;
+    min-height: 64vh;
   }
 
   .about-page-v2 .hero-content {
-    padding: 0 1.5rem;
+    padding: 6rem 1.5rem 3rem;
   }
 
   .about-page-v2 .hero-title {
