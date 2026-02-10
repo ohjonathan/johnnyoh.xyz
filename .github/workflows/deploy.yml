@@ -31,4 +31,4 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLAUDFLARE_SECRET_API_JOHNNYOH_XYZ }}
-          command: pages deploy public --project-name=johnnyoh-xyz
+          command: pages deploy public --project-name=ohjonathan-com
