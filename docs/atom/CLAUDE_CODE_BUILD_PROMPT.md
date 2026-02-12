@@ -1,4 +1,4 @@
-# CLAUDE CODE: johnnyoh.xyz Complete Site Build
+# CLAUDE CODE: ohjonathan.com Complete Site Build
 
 > **IMPORTANT:** Read this ENTIRE document before writing any code. This is a complete, self-contained implementation spec. Do NOT reference any external files, mockups, or prior conversations. Everything you need is here.
 
@@ -6,7 +6,7 @@
 
 ## OVERVIEW
 
-Build the personal website for Jonathan Oh at `johnnyoh.xyz`. The site uses Hugo (static site generator) with the Paper theme as a base, hosted on Cloudflare Pages with GitHub Actions auto-deploy. The repo already exists with basic infrastructure — we are replacing ALL custom templates, CSS, and content with a new dual-theme design system.
+Build the personal website for Jonathan Oh at `ohjonathan.com`. The site uses Hugo (static site generator) with the Paper theme as a base, hosted on Cloudflare Pages with GitHub Actions auto-deploy. The repo already exists with basic infrastructure — we are replacing ALL custom templates, CSS, and content with a new dual-theme design system.
 
 **The site has two visual themes that share identical HTML:**
 
@@ -1503,7 +1503,7 @@ body {
 ### hugo.toml (MERGE these changes into the existing file — do not lose existing settings like [outputs] or [markup])
 
 ```toml
-baseURL = "https://johnnyoh.xyz/"
+baseURL = "https://ohjonathan.com/"
 languageCode = "en-us"
 title = "Jonathan Oh"
 theme = "paper"

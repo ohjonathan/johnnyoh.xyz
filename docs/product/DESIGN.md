@@ -1,6 +1,6 @@
-# johnnyoh.xyz — Design System
+# ohjonathan.com — Design System
 
-> **What this is:** The single source of truth for all visual and structural design decisions on johnnyoh.xyz. Read this before creating or modifying any template, stylesheet, or component.
+> **What this is:** The single source of truth for all visual and structural design decisions on ohjonathan.com. Read this before creating or modifying any template, stylesheet, or component.
 >
 > **Who this is for:** Any AI coding agent (Claude Code, Gemini CLI, Codex CLI) or human developer working on this site. If a decision isn't documented here, it hasn't been made — ask before guessing.
 >
@@ -13,7 +13,7 @@
 **Site owner:** Jonathan Oh
 **Professional name (all UI):** "Jonathan Oh" — never "Johnny" in any rendered template or nav element
 **Positioning:** Builder by default. Consultant by training.
-**Domain:** johnnyoh.xyz
+**Domain:** ohjonathan.com
 **Personality of the design:** Confident, clean, intentional. The site should feel like it was built by someone who builds things — not flashy, not minimal-to-the-point-of-invisible. Every choice is deliberate. Think: a well-organized repo, not a marketing page.
 
 ---

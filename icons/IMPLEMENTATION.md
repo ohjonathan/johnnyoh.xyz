@@ -1,4 +1,4 @@
-# Oh. Logo — Implementation Guide for johnnyoh.xyz
+# Oh. Logo — Implementation Guide for ohjonathan.com
 
 ## Favicon Files
 
