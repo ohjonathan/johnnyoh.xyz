@@ -13,6 +13,31 @@
       {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
       {{ end }}
     </div>
+    {{ else if or (eq .Section "roles") (eq .Section "jobs") }}
+    {{ $roleID := or .Params.role_id .Params.job_id }}
+    {{ $updateOfRoleID := or .Params.update_of_role_id .Params.update_of_job_id }}
+    {{ $duplicateOfRoleID := or .Params.duplicate_of_role_id .Params.duplicate_of_job_id }}
+    <div class="page-meta">
+      <time>{{ .Date.Format "January 2, 2006" }}</time>
+      {{ with $roleID }}
+      <span class="meta-separator">·</span>
+      <span class="tag">{{ . | upper }}</span>
+      {{ end }}
+      {{ with .Params.status }}
+      <span class="meta-separator">·</span>
+      <span class="tag">{{ . }}</span>
+      {{ end }}
+    </div>
+    {{ if $updateOfRoleID }}
+    <div class="page-meta">
+      <span>Update of {{ $updateOfRoleID | upper }}</span>
+    </div>
+    {{ end }}
+    {{ if $duplicateOfRoleID }}
+    <div class="page-meta">
+      <span>Duplicate of {{ $duplicateOfRoleID | upper }}</span>
+    </div>
+    {{ end }}
     {{ end }}
   </header>
   <div class="page-content">

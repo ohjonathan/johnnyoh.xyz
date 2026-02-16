@@ -33,6 +33,11 @@ theme = "paper"
     url = "/projects/"
     weight = 20
   [[menu.main]]
+    identifier = "roles"
+    name = "Roles"
+    url = "/roles/"
+    weight = 25
+  [[menu.main]]
     identifier = "writing"
     name = "Writing"
     url = "/posts/"

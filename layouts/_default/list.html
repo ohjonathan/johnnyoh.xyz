@@ -17,6 +17,23 @@
     {{ end }}
   </div>
 
+  {{ else if or (eq .Section "roles") (eq .Section "jobs") }}
+  <div class="section writing-section">
+    {{ range .Pages.ByDate.Reverse }}
+    <a href="{{ .Permalink }}" class="post-item">
+      <span class="post-title">{{ .Title }}</span>
+      <span class="post-date">
+        {{ $roleID := or .Params.role_id .Params.job_id }}
+        {{ with $roleID }}
+        {{ . | upper }}
+        {{ else }}
+        MISSING-ID
+        {{ end }}
+      </span>
+    </a>
+    {{ end }}
+  </div>
+
   {{ else if eq .Section "projects" }}
   <div class="section projects-section">
     {{ range .Pages.ByDate.Reverse }}
