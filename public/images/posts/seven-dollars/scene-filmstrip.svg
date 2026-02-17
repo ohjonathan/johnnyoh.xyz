@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 200" font-family="'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif">
+  <style>
+    .frame { fill: #F0EDE8; stroke: #E8E4DF; stroke-width: 1; rx: 4; }
+    .era-label { font-size: 10px; font-weight: 600; fill: #1A1A1A; text-anchor: middle; }
+    .era-sub { font-size: 8.5px; fill: #5C5C5C; text-anchor: middle; }
+    .scene-num { font-size: 9px; fill: #8A8A8A; text-anchor: middle; font-family: 'JetBrains Mono', 'SF Mono', monospace; }
+    .strip-bg { fill: #1A1A1A; rx: 6; }
+    .sprocket { fill: #333; rx: 1; }
+    .timeline { stroke: #1B2A4A; stroke-width: 1.5; }
+    .timeline-dot { fill: #1B2A4A; }
+    @media (prefers-color-scheme: dark) {
+      .frame { fill: #1C2E24; stroke: #2A3D30; }
+      .era-label { fill: #D4E4D4; }
+      .era-sub { fill: #8FA88F; }
+      .scene-num { fill: #5A7A5A; }
+      .strip-bg { fill: #0A0F0D; }
+      .sprocket { fill: #1C2E24; }
+      .timeline { stroke: #3CEC6A; }
+      .timeline-dot { fill: #3CEC6A; }
+    }
+  </style>
+
+  <!-- Film strip background -->
+  <rect x="10" y="25" width="760" height="120" class="strip-bg"/>
+
+  <!-- Sprocket holes top -->
+  <rect x="22" y="30" width="8" height="6" class="sprocket"/><rect x="130" y="30" width="8" height="6" class="sprocket"/><rect x="238" y="30" width="8" height="6" class="sprocket"/><rect x="346" y="30" width="8" height="6" class="sprocket"/><rect x="454" y="30" width="8" height="6" class="sprocket"/><rect x="562" y="30" width="8" height="6" class="sprocket"/><rect x="670" y="30" width="8" height="6" class="sprocket"/>
+
+  <!-- Sprocket holes bottom -->
+  <rect x="22" y="134" width="8" height="6" class="sprocket"/><rect x="130" y="134" width="8" height="6" class="sprocket"/><rect x="238" y="134" width="8" height="6" class="sprocket"/><rect x="346" y="134" width="8" height="6" class="sprocket"/><rect x="454" y="134" width="8" height="6" class="sprocket"/><rect x="562" y="134" width="8" height="6" class="sprocket"/><rect x="670" y="134" width="8" height="6" class="sprocket"/>
+
+  <!-- Scene frames (placeholder rectangles) -->
+  <rect x="22"  y="42" width="94" height="86" class="frame"/>
+  <rect x="124" y="42" width="94" height="86" class="frame"/>
+  <rect x="226" y="42" width="94" height="86" class="frame"/>
+  <rect x="328" y="42" width="94" height="86" class="frame"/>
+  <rect x="430" y="42" width="94" height="86" class="frame"/>
+  <rect x="532" y="42" width="94" height="86" class="frame"/>
+  <rect x="664" y="42" width="94" height="86" class="frame"/>
+
+  <!-- Scene numbers inside frames -->
+  <text x="69"  y="92" class="scene-num" fill="#8A8A8A" font-size="22" opacity="0.5">1</text>
+  <text x="171" y="92" class="scene-num" fill="#8A8A8A" font-size="22" opacity="0.5">2</text>
+  <text x="273" y="92" class="scene-num" fill="#8A8A8A" font-size="22" opacity="0.5">3</text>
+  <text x="375" y="92" class="scene-num" fill="#8A8A8A" font-size="22" opacity="0.5">4</text>
+  <text x="477" y="92" class="scene-num" fill="#8A8A8A" font-size="22" opacity="0.5">5</text>
+  <text x="579" y="92" class="scene-num" fill="#8A8A8A" font-size="22" opacity="0.5">6</text>
+  <text x="711" y="92" class="scene-num" fill="#8A8A8A" font-size="22" opacity="0.5">7</text>
+
+  <!-- Era labels below strip -->
+  <text x="69"  y="162" class="era-label">1700–1830</text>
+  <text x="69"  y="175" class="era-sub">The Swamp</text>
+
+  <text x="171" y="162" class="era-label">1830–1870</text>
+  <text x="171" y="175" class="era-sub">The Raising</text>
+
+  <text x="273" y="162" class="era-label">1871</text>
+  <text x="273" y="175" class="era-sub">The Great Fire</text>
+
+  <text x="375" y="162" class="era-label">1880–1920</text>
+  <text x="375" y="175" class="era-sub">Sky-Scrapers</text>
+
+  <text x="477" y="162" class="era-label">1930–1990</text>
+  <text x="477" y="175" class="era-sub">Steel Giants</text>
+
+  <text x="579" y="162" class="era-label">2000–2026</text>
+  <text x="579" y="175" class="era-sub">Glass Millennium</text>
+
+  <text x="711" y="162" class="era-label">2026</text>
+  <text x="711" y="175" class="era-sub">Sunrise</text>
+
+  <!-- Timeline dots -->
+  <line x1="69" y1="186" x2="711" y2="186" class="timeline"/>
+  <circle cx="69"  cy="186" r="3" class="timeline-dot"/>
+  <circle cx="171" cy="186" r="3" class="timeline-dot"/>
+  <circle cx="273" cy="186" r="3" class="timeline-dot"/>
+  <circle cx="375" cy="186" r="3" class="timeline-dot"/>
+  <circle cx="477" cy="186" r="3" class="timeline-dot"/>
+  <circle cx="579" cy="186" r="3" class="timeline-dot"/>
+  <circle cx="711" cy="186" r="3" class="timeline-dot"/>
+</svg>

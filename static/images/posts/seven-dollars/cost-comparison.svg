@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 530" font-family="'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif">
+  <style>
+    .col-header { font-size: 11px; font-weight: 500; fill: #8A8A8A; letter-spacing: 0.1em; text-transform: uppercase; font-family: 'JetBrains Mono', 'SF Mono', monospace; }
+    .col-title { font-size: 22px; font-weight: 700; fill: #1A1A1A; }
+    .metric-label { font-size: 12px; fill: #8A8A8A; font-family: 'JetBrains Mono', 'SF Mono', monospace; }
+    .metric-value { font-size: 28px; font-weight: 700; fill: #1A1A1A; }
+    .metric-value-accent { font-size: 28px; font-weight: 700; fill: #1B2A4A; }
+    .metric-detail { font-size: 12.5px; fill: #5C5C5C; }
+    .divider { stroke: #E8E4DF; stroke-width: 1; }
+    .card { fill: none; stroke: #E8E4DF; stroke-width: 1; rx: 8; }
+    .card-accent { fill: none; stroke: #1B2A4A; stroke-width: 1.5; rx: 8; }
+    .vs-badge { font-size: 13px; font-weight: 600; fill: #8A8A8A; font-family: 'JetBrains Mono', 'SF Mono', monospace; }
+    .vs-line { stroke: #E8E4DF; stroke-width: 1; }
+    [data-theme="terminal"] .col-title { fill: #D4E4D4; }
+    [data-theme="terminal"] .metric-value { fill: #D4E4D4; }
+    [data-theme="terminal"] .metric-value-accent { fill: #3CEC6A; }
+    [data-theme="terminal"] .metric-detail { fill: #8FA88F; }
+    [data-theme="terminal"] .divider { stroke: #1C2E24; }
+    [data-theme="terminal"] .card { stroke: #1C2E24; }
+    [data-theme="terminal"] .card-accent { stroke: #3CEC6A; }
+    [data-theme="terminal"] .col-header { fill: #5A7A5A; }
+    [data-theme="terminal"] .metric-label { fill: #5A7A5A; }
+    [data-theme="terminal"] .vs-badge { fill: #5A7A5A; }
+    [data-theme="terminal"] .vs-line { stroke: #1C2E24; }
+  </style>
+
+  <!-- Top: AI Production -->
+  <rect x="20" y="20" width="640" height="200" class="card-accent"/>
+  <text x="340" y="58" text-anchor="middle" class="col-header">VEO 3 + ONE PERSON</text>
+  <text x="340" y="88" text-anchor="middle" class="col-title">AI Production</text>
+
+  <text x="70" y="125" class="metric-label">cost</text>
+  <text x="70" y="162" class="metric-value-accent">$7</text>
+  <text x="70" y="182" class="metric-detail">700 AI credits</text>
+
+  <text x="230" y="125" class="metric-label">time</text>
+  <text x="230" y="162" class="metric-value-accent">1 day</text>
+  <text x="230" y="182" class="metric-detail">afternoon of iteration</text>
+
+  <text x="400" y="125" class="metric-label">team</text>
+  <text x="400" y="162" class="metric-value-accent">1</text>
+  <text x="400" y="182" class="metric-detail">person</text>
+
+  <text x="530" y="125" class="metric-label">tools</text>
+  <text x="530" y="162" class="metric-value-accent">2</text>
+  <text x="530" y="182" class="metric-detail">Veo 3 + Gemini</text>
+
+  <!-- vs. divider -->
+  <line x1="20" y1="260" x2="300" y2="260" class="vs-line"/>
+  <text x="340" y="264" text-anchor="middle" class="vs-badge">vs.</text>
+  <line x1="380" y1="260" x2="660" y2="260" class="vs-line"/>
+
+  <!-- Bottom: Traditional VFX -->
+  <rect x="20" y="295" width="640" height="220" class="card"/>
+  <text x="340" y="333" text-anchor="middle" class="col-header">TRADITIONAL VFX</text>
+  <text x="340" y="363" text-anchor="middle" class="col-title">Studio Production</text>
+
+  <text x="70" y="400" class="metric-label">cost</text>
+  <text x="70" y="437" class="metric-value">$10K–$100K+</text>
+  <text x="70" y="457" class="metric-detail">per finished minute</text>
+
+  <text x="300" y="400" class="metric-label">time</text>
+  <text x="300" y="437" class="metric-value">Weeks</text>
+  <text x="300" y="457" class="metric-detail">modeling + rendering</text>
+
+  <text x="440" y="400" class="metric-label">team</text>
+  <text x="440" y="437" class="metric-value">5–15+</text>
+  <text x="440" y="457" class="metric-detail">specialists</text>
+
+  <text x="570" y="400" class="metric-label">roles</text>
+  <text x="570" y="425" class="metric-detail">VFX artists</text>
+  <text x="570" y="443" class="metric-detail">3D modelers</text>
+  <text x="570" y="461" class="metric-detail">Historians</text>
+  <text x="570" y="479" class="metric-detail">Compositors</text>
+
+  <text x="340" y="500" text-anchor="middle" class="metric-detail" font-style="italic">Professional-grade output</text>
+</svg>

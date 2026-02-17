@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 320" font-family="'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif">
+  <style>
+    .step-box { fill: none; stroke: #1B2A4A; stroke-width: 1.5; rx: 8; }
+    .step-num { font-size: 13px; font-weight: 600; fill: #fff; }
+    .step-num-bg { fill: #1B2A4A; }
+    .step-title { font-size: 15px; font-weight: 600; fill: #1A1A1A; }
+    .step-desc { font-size: 12.5px; fill: #5C5C5C; }
+    .arrow { stroke: #1B2A4A; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    .arrow-path { fill: none; stroke: #1B2A4A; stroke-width: 1.2; }
+    .feedback { stroke: #8A8A8A; stroke-width: 1; stroke-dasharray: 6 4; fill: none; marker-end: url(#arrowGray); }
+    .feedback-path { fill: none; stroke: #8A8A8A; stroke-width: 1; }
+    .feedback-label { font-size: 11px; fill: #8A8A8A; font-style: italic; }
+    .header { font-size: 11px; font-weight: 500; fill: #8A8A8A; letter-spacing: 0.1em; text-transform: uppercase; font-family: 'JetBrains Mono', 'SF Mono', monospace; }
+    [data-theme="terminal"] .step-box { stroke: #3CEC6A; }
+    [data-theme="terminal"] .step-num-bg { fill: #3CEC6A; }
+    [data-theme="terminal"] .step-title { fill: #D4E4D4; }
+    [data-theme="terminal"] .step-desc { fill: #8FA88F; }
+    [data-theme="terminal"] .arrow { stroke: #3CEC6A; }
+    [data-theme="terminal"] .arrow-path { stroke: #3CEC6A; }
+    [data-theme="terminal"] .feedback { stroke: #5A7A5A; }
+    [data-theme="terminal"] .feedback-path { stroke: #5A7A5A; }
+    [data-theme="terminal"] .feedback-label { fill: #5A7A5A; }
+    [data-theme="terminal"] .header { fill: #5A7A5A; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" class="arrow-path"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" class="feedback-path"/>
+    </marker>
+  </defs>
+
+  <text x="390" y="24" text-anchor="middle" class="header">PROMPT ITERATION PROCESS</text>
+
+  <!-- Step 1 -->
+  <rect x="20" y="50" width="160" height="110" class="step-box"/>
+  <rect x="80" y="40" width="24" height="24" rx="12" class="step-num-bg"/>
+  <text x="92" y="56" text-anchor="middle" class="step-num">1</text>
+  <text x="100" y="82" text-anchor="middle" class="step-title">Vision</text>
+  <text x="100" y="102" text-anchor="middle" class="step-desc">Describe the full</text>
+  <text x="100" y="118" text-anchor="middle" class="step-desc">creative idea in</text>
+  <text x="100" y="134" text-anchor="middle" class="step-desc">natural language</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="180" y1="105" x2="218" y2="105" class="arrow"/>
+
+  <!-- Step 2 -->
+  <rect x="220" y="50" width="160" height="110" class="step-box"/>
+  <rect x="280" y="40" width="24" height="24" rx="12" class="step-num-bg"/>
+  <text x="292" y="56" text-anchor="middle" class="step-num">2</text>
+  <text x="300" y="82" text-anchor="middle" class="step-title">Decompose</text>
+  <text x="300" y="102" text-anchor="middle" class="step-desc">Break into scenes</text>
+  <text x="300" y="118" text-anchor="middle" class="step-desc">with shared technical</text>
+  <text x="300" y="134" text-anchor="middle" class="step-desc">header for consistency</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="380" y1="105" x2="418" y2="105" class="arrow"/>
+
+  <!-- Step 3 -->
+  <rect x="420" y="50" width="160" height="110" class="step-box"/>
+  <rect x="480" y="40" width="24" height="24" rx="12" class="step-num-bg"/>
+  <text x="492" y="56" text-anchor="middle" class="step-num">3</text>
+  <text x="500" y="82" text-anchor="middle" class="step-title">Specificity</text>
+  <text x="500" y="102" text-anchor="middle" class="step-desc">Replace generic terms</text>
+  <text x="500" y="118" text-anchor="middle" class="step-desc">with real landmarks,</text>
+  <text x="500" y="134" text-anchor="middle" class="step-desc">dates, and details</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="580" y1="105" x2="618" y2="105" class="arrow"/>
+
+  <!-- Step 4 -->
+  <rect x="620" y="50" width="140" height="110" class="step-box"/>
+  <rect x="670" y="40" width="24" height="24" rx="12" class="step-num-bg"/>
+  <text x="682" y="56" text-anchor="middle" class="step-num">4</text>
+  <text x="690" y="82" text-anchor="middle" class="step-title">Creative Edit</text>
+  <text x="690" y="102" text-anchor="middle" class="step-desc">Add Scene 7 ending.</text>
+  <text x="690" y="118" text-anchor="middle" class="step-desc">A human decision</text>
+  <text x="690" y="134" text-anchor="middle" class="step-desc">no AI suggested.</text>
+
+  <!-- Feedback loop arrow -->
+  <path d="M500,160 L500,200 Q500,220 480,220 L120,220 Q100,220 100,200 L100,160" class="feedback"/>
+  <text x="300" y="238" text-anchor="middle" class="feedback-label">iterate until prompts produce the right output</text>
+
+  <!-- Bottom annotation -->
+  <text x="390" y="285" text-anchor="middle" class="step-desc" font-size="13" font-style="italic">Each round: review output → refine prompt language → re-generate</text>
+</svg>
