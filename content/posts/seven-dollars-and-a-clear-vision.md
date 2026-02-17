@@ -6,7 +6,7 @@ tags: ["ai", "creativity", "veo-3", "video"]
 draft: false
 ---
 
-For the first time, the bottleneck isn't your skillsets, but your intention. It's not about what you can or can't do; it's whether you know what you actually want to make.
+For the first time, the bottleneck isn't your skillsets, but your taste and intention. It's not about what you can or can't do; it's whether you know what you actually want to make.
 
 I've been thinking about this a lot lately. The conversation around AI is dominated by productivity and coding, and for good reason. But there's a quieter shift happening in creative expression that I think deserves more attention. The tools to make things that used to require years of specialized training are now available to anyone who can clearly articulate what they want. The skill gap isn't gone, but it's narrowing fast, across every field.
 
